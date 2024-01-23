@@ -64,3 +64,7 @@ app.listen(port, () =>
 
 Et voilà on a une app backend NodeJS 😎
 Il suffit de faire `npm start` (comme indiqué dans `package.json`) pour lancer le serveur, depuis le terminal.
+
+## Ajouter le Dockerfile
+
+Son contenu [se trouve ici](dockerfile_content.md)
