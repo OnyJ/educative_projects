@@ -57,6 +57,8 @@ Spoiler (réponse)
 
 ![image](https://github.com/user-attachments/assets/e809afc1-5070-4c89-a544-18b0711cf657)
 
+[Source](https://stackoverflow.com/questions/36075525/how-do-i-run-a-docker-instance-from-a-dockerfile)
+
 Meilleure commande pour lancer docker
 ```sh
 docker run -p 3000:3000 a3e628814c67
