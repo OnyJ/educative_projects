@@ -25,35 +25,46 @@ CMD ["npm", "start"]
 
 Je vous laisse faire votre propre recherche sur comment lancer l'installation de votre Dockerfile, puis lancer votre serveur docker
 
+- 
+- 
+
+- 
+- 
+
+- 
+- 
+
+- 
+- 
+
+- 
+- 
+
+- 
+- 
+
+- 
+- 
+
+- 
+- 
+
+
+
+## Spoiler (réponse)
+
 ![image](https://github.com/user-attachments/assets/ff37942c-a79b-46a5-b1d8-a772ff8c8df2)
 
-- 
-- 
 
-- 
-- 
+### Option 1
 
-- 
-- 
+```sh
+npm start
+docker build -t ton_image .
+docker run -p 3000:3000 ton_image
+```
 
-- 
-- 
-
-- 
-- 
-
-- 
-- 
-
-- 
-- 
-
-- 
-- 
-
-
-
-Spoiler (réponse)
+### Option 2 (plus compliquée)
 
 ![image](https://github.com/user-attachments/assets/e809afc1-5070-4c89-a544-18b0711cf657)
 
