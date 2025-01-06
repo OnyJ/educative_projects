@@ -6,7 +6,14 @@ But : à utiliser pour dockeriser le projet, en suivant le cours.
 
 ## Comment coder ce projet from scratch
 
+1. Ouvrir un terminal git bash.
+
+2. Se rendre dans l'endroit de notre choix en utilisant `cd`, `ls`.
+
+3. Créer notre projet :
+
 ```sh
+
 # créer un dossier pour le projet et s'y rendre
 mkdir projet-docker
 cd project-docker
