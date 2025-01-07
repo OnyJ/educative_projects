@@ -25,36 +25,33 @@ CMD ["npm", "start"]
 
 Je vous laisse faire votre propre recherche sur comment lancer l'installation de votre Dockerfile, puis lancer votre serveur docker
 
-- 
-- 
+-
+-
 
-- 
-- 
+-
+-
 
-- 
-- 
+-
+-
 
-- 
-- 
+-
+-
 
-- 
-- 
+-
+-
 
-- 
-- 
+-
+-
 
-- 
-- 
+-
+-
 
-- 
-- 
-
-
+-
+-
 
 ## Spoiler (réponse)
 
 ![image](https://github.com/user-attachments/assets/ff37942c-a79b-46a5-b1d8-a772ff8c8df2)
-
 
 ### Option 1
 
@@ -71,6 +68,15 @@ docker run -p 3000:3000 ton_image
 [Source](https://stackoverflow.com/questions/36075525/how-do-i-run-a-docker-instance-from-a-dockerfile)
 
 Meilleure commande pour lancer docker
+
 ```sh
 docker run -p 3000:3000 a3e628814c67
 ```
+
+# Instant bonne pratique
+
+Ne pas oublier d'ignorer les fichiers ou dossiers trop volumineux inutiles.
+
+> Exemple, comme pour le fichier `.gitignore`, on souhaite ignorer `node_modules` qui est énorme, et qui peut être réinstallé grâce à un simple `npm install` (pour ça, le `package.json` doit déjà être dans votre dossier de projet).
+
+Dans votre dossier, faites un fichier `.dockerignore` pour y écrire `node_modules`.
