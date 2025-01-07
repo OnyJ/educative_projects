@@ -16,7 +16,7 @@ But : à utiliser pour dockeriser le projet, en suivant le cours.
 
 # créer un dossier pour le projet et s'y rendre
 mkdir projet-docker
-cd project-docker
+cd projet-docker
 
 # faire un repository git
 git init
