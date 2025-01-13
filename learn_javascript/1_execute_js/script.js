@@ -1,5 +1,13 @@
 /*
+//////////////////////////////////////////////////////
+//
+// On vérifie que le fichier est bien connecté au HTML
+
 console.log("hello JS");
+
+//////////////////////////////////////////////////////
+//
+// Notions de base en JS
 
 // Un commentaire
 /* 
@@ -7,14 +15,19 @@ console.log("hello JS");
   ...pouvant prendre plusieurs lignes à la fois
 */
 
+//////////////////////////////////////////////////////
+//
+// Les variables
+
 /*
 // Déclarer une variable
 var age = 20; // -> ancienne manière, ne pas déclarer nos variables comme tel !
 let weight = 1; // On crée une variable modifiable dans le futur
 const skyColor = "blue"; // On crée une variable inchangeable dans le futur
 
+// Les opérations,
 let calculation = 3 + 3;
-// Modifie variable
+// Modifier une variable
 calculation = calculation - 2;
 
 let string1 = "blue";
@@ -23,16 +36,20 @@ let string3 = `Le résultat est ${calculation}`;
 
 console.log(calculation);
 console.log(string3);
+// Concaténer plusieurs strings (aditionner)
 console.log(string1 + " " + string2);
 
+// Booléens
 let isNight = false;
 let isDay = true;
 
+// Null et undefined
 let noValue = null;
 let undefinedValue = undefined;
 
 console.log(undefinedValue);
 
+// Autres opérations :
 const multiply = 3 * 477;
 const divide = 3 / 477; // On obtient un float !
 // Float veut dire une variable décimale (ici : 0,00628....)
@@ -40,9 +57,11 @@ const divide = 3 / 477; // On obtient un float !
 console.log(multiply);
 console.log(divide);
 
+// Modulo
 let modulo = 5 % 2;
 console.log(modulo);
 
+// Objets
 let user = {
   name: "John",
   age: 30,
@@ -54,19 +73,32 @@ let user = {
 let id = Symbol("id");
 let id2 = Symbol("id");
 console.log(id === id2);
+
 */
 
-// let isDay = false;
-// let isMidDay = true;
+//////////////////////////////////////////////////////
 //
-// if (isMidDay === false) {
-//   console.log("C'est le midi");
-// } else if (isDay) {
-//   console.log("C'est le jour");
-// } else {
-//   console.log("C'est la nuit");
-// }
+// Les conditions
 
+/*
+let isDay = false;
+let isMidDay = true;
+
+if (isMidDay === false) {
+  console.log("C'est le midi");
+} else if (isDay) {
+  console.log("C'est le jour");
+} else {
+  console.log("C'est la nuit");
+}
+*/
+
+//////////////////////////////////////////////////////
+//
+// Readline pour le prompt,
+// Switch
+
+/*
 const readline = require("readline");
 
 console.log(
@@ -113,3 +145,32 @@ readlineInterface.question("Quel age avez-vous ? ", (input) => {
 
   readlineInterface.close();
 });
+
+*/
+
+//////////////////////////////////////////////////////
+//
+// Les Boucles
+
+const readline = require("readline");
+const readlineInterface = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+console.log("Le nom magique est BobyLeMagicien");
+
+let name = "No name";
+
+while (name !== "BobyLeMagicien") {
+  // name = prompt("Quel est le nom magique ?");
+
+  readlineInterface.question("Quel est votre nom ? ", (input) => {
+    console.log(`Vous avez entré : ${input}`);
+    name = input;
+
+    if (name === "BobyLeMagicien") {
+      console.log("Bravo vous avez gagnééé !");
+    }
+  });
+}
