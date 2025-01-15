@@ -254,6 +254,7 @@ myUser.createPassword();
 //
 // Les tableaux
 
+/*
 const numbers = [1, 2, 3, 4, 5];
 const letters = ["a", "e", "i", "k"];
 let stringsArray = [
@@ -287,3 +288,26 @@ console.log(stringsArray.concat(["Deuxieme", "Phrase"]));
 // months.splice(1, 1, "Feb", "allo", "ola", "halo");
 //
 // console.log(months);
+*/
+
+//////////////////////////////////////////////////////
+//
+// Brouillon
+
+let articleFropmTheGoogleMapsAPI = {
+  title: "mon titre",
+  description: "aooeoeoeoeoeoeoeo",
+  price: 10,
+  isValidated: true,
+  explainTitle() {
+    console.log(`${monObjet.title} is about... ${monObjet.description}`);
+  },
+};
+
+// Destructuration
+const { title, price } = articleFropmTheGoogleMapsAPI;
+
+console.log(title);
+console.log(price);
+
+// console.log(monObjet.explainTitle());
