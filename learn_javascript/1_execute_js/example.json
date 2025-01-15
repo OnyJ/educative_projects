@@ -1,0 +1,28 @@
+{
+  "personnes": [
+    {
+      "nom": "Alice",
+      "age": 30,
+      "ville": "Paris",
+      "interets": ["lecture", "voyage", "musique"]
+    },
+    {
+      "nom": "Alicci",
+      "age": 30,
+      "ville": "Paris",
+      "interets": ["lecture", "voyage", "musique"]
+    },
+    {
+      "nom": "Alicio",
+      "age": 30,
+      "ville": "Paris",
+      "interets": ["lecture", "voyage", "musique"]
+    },
+    {
+      "nom": "Alicia",
+      "age": 30,
+      "ville": "Paris",
+      "interets": ["lecture", "voyage", "musique"]
+    }
+  ]
+}
