@@ -152,6 +152,7 @@ readlineInterface.question("Quel age avez-vous ? ", (input) => {
 //
 // Les Boucles
 
+/*
 const readline = require("readline");
 const readlineInterface = readline.createInterface({
   input: process.stdin,
@@ -174,3 +175,115 @@ while (name !== "BobyLeMagicien") {
     }
   });
 }
+*/
+
+//////////////////////////////////////////////////////
+//
+// Les fonctions
+
+// camelCase PascalCase snake_case
+
+/*
+console.log(buildHello("Jean", "Duponteee"));
+
+function helloWorld() {
+  console.log("Hello World");
+}
+function sayHello(name) {
+  console.log(`bonjour ${name}`);
+}
+
+function buildHello(firstName, lastName) {
+  const fullName = firstName + " " + lastName;
+  return "hello " + fullName;
+}
+
+// helloWorld();
+// sayHello("Jean");
+
+console.log(buildHello("Jean", "Dupont"));
+
+const helloPhrase = buildHello("Jean", "Dupont");
+console.log(helloPhrase);
+
+const maFonction = () => {
+  console.log("Là c'est ma fonction");
+};
+
+maFonction();
+
+const users = [
+  { name: "patrick", age: "2" },
+  { name: "patrice", age: "22" },
+];
+
+// console.log(users[1].name)
+
+console.log(() => {
+  const calculation = 2 + 2;
+  return calculation;
+});
+
+*/
+
+//////////////////////////////////////////////////////
+//
+// Les classes
+
+/*
+class User {
+  constructor(name, email) {
+    this.name = name;
+    this.email = email;
+    this.password = null;
+  }
+
+  createPassword() {
+    this.password = this.name + "1234" + this.email;
+    console.log(this.password);
+  }
+}
+
+const myUser = new User("Ford", "creatorOfCar@gmail.com");
+
+console.log(myUser);
+myUser.createPassword();
+*/
+
+//////////////////////////////////////////////////////
+//
+// Les tableaux
+
+const numbers = [1, 2, 3, 4, 5];
+const letters = ["a", "e", "i", "k"];
+let stringsArray = [
+  "bonjour",
+  "comment",
+  "ça",
+  "va",
+  "?",
+  "#~é&!!%%",
+];
+
+// console.log(numbers);
+// console.log(letters[3]);
+
+// console.log(stringsArray);
+// stringsArray.push("fred");
+console.log("avant :");
+console.log(stringsArray);
+console.log("\n");
+
+stringsArray.pop();
+let string = stringsArray.join(" ");
+string = string.concat(" Cordialement");
+
+console.log("après :");
+// console.log(stringsArray.slice());
+console.log(stringsArray.concat(["Deuxieme", "Phrase"]));
+// console.log(string)
+
+// const months = ["Jan", "March", "April", "June"];
+// months.splice(1, 1, "Feb", "allo", "ola", "halo");
+//
+// console.log(months);
