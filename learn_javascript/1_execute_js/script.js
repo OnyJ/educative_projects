@@ -294,6 +294,7 @@ console.log(stringsArray.concat(["Deuxieme", "Phrase"]));
 //
 // Brouillon
 
+/*
 let articleFropmTheGoogleMapsAPI = {
   title: "mon titre",
   description: "aooeoeoeoeoeoeoeo",
@@ -311,3 +312,73 @@ console.log(title);
 console.log(price);
 
 // console.log(monObjet.explainTitle());
+*/
+
+/////////////////////////////////////
+// String Manipulation
+/*
+let fruit = "banana";
+// console.log(fruit.indexOf("a"));
+// console.log(fruit.substring(2, 4));
+// console.log(fruit.length);
+// console.log(fruit.replace("b", "t"));
+const emails = "toto@tt.com,titi@tt.com,tutu@tt.com";
+console.log(emails.split(" "));
+*/
+
+////////////////////////////////////
+// Try Catch
+
+/*
+try {
+  console.logg("eeee");
+} catch (error) {
+  console.error("Error in article edition system : " + error.message);
+}
+  */
+
+/*
+
+const numbers = [1, 2, 3, 4];
+const bigNumbers = numbers.map((num) => num * 100);
+
+const filteredNumbers = numbers.filter((num) => num % 2 === 0);
+
+// console.log(bigNumbers);
+console.log(filteredNumbers);
+
+
+*/
+
+/////////////////////////////
+// Functions
+
+/*
+function test(anotherFunction) {
+  console.log("la fonction test");
+  anotherFunction();
+}
+
+test(() => console.log("autre fonction"));
+*/
+
+function getSubwayTimes() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("Les horaires a montparnasse : 10");
+      resolve(10);
+    }, 1000);
+  });
+}
+
+async function maFonction() {
+  console.log("1");
+  console.log("2");
+  const subwayTimes = await getSubwayTimes();
+  // const subwayTimes = getSubwayTimes();
+  console.log("3 (a besoin des subway times), " + subwayTimes);
+}
+
+maFonction();
+
+const showSubways = require("./subwayFunctions");
