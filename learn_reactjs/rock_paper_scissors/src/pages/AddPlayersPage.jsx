@@ -7,6 +7,7 @@ export default function AddPlayersPage() {
       <form id="add-player-form">
         <label for="player-name">Player Name:</label>
         <input type="text" id="player-name" required />
+        <br />
         <button type="submit">Add Player</button>
       </form>
 
