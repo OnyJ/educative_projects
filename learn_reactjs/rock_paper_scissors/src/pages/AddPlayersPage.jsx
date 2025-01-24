@@ -11,7 +11,10 @@ export default function AddPlayersPage() {
       </form>
 
       <div>
-        <ul id="players-list"></ul>
+        <ul id="players-list">
+          <li>Exemple 1</li>
+          <li>Exemple 2</li>
+        </ul>
       </div>
     </>
   );
