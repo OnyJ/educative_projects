@@ -1,8 +1,8 @@
-Contenu du fichier `Dockerfile` à créer :
+Contenu du fichier `Dockerfile` à créer à la racine du projet :
 
 ```Dockerfile
 # Utilisation d'une image de base Node.js
-FROM node:14
+FROM node:18
 
 # Création du répertoire de travail dans le conteneur
 WORKDIR /app
@@ -25,6 +25,7 @@ CMD ["npm", "start"]
 
 Je vous laisse faire votre propre recherche sur comment lancer l'installation de votre Dockerfile, puis lancer votre serveur docker
 
+   
 -
 -
 
